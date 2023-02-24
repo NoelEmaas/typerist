@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container container d-flex vh-100 align-items-center">
+        <div class="inner-container container w-50 rounded-3 p-4">
+            <script>
+                const words = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet,', 'consectetur', 'adipiscing', 'elit.', 'Sed', 'ut', 'fringilla', 'arcu.', 'Nullam', 'ut', 'quam', 'eget', 'turpis', 'mattis', 'vulputate.', 'Nam', 'cursus', 'dolor', 'sed', 'dui', 'mattis,', 'ac', 'aliquam', 'neque', 'tristique.', 'In', 'interdum', 'nisi', 'id', 'diam', 'volutpat,', 'vel', 'tempus', 'nunc', 'viverra.', 'Pellentesque', 'dignissim', 'tortor', 'quis', 'tortor', 'dignissim,', 'a', 'sollicitudin', 'eros', 'viverra', 'at.'];
+                let html = '';
+                for (let i = 0; i < words.length; i++) {
+                  html += `<span>${words[i]}</span> `;
+                }
+                document.write(html);
+            </script>
+            <div class="input-group pt-3">
+                <input type="text" class="form-control rounded-2">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button"><i class="bi bi-arrow-counterclockwise"></i></button>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
