@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+.inner-container {
+    background-color: #262626;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.98rem;
+}
+
+.inner-container p {
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.inner-container input[type=text] {
+    font-family: 'Roboto Mono', monospace;
+    margin-right: 15px;
+    font-size: 1rem;
+    background-color: #0F0F0F;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    transition: 0.4s;
+}
+
+.inner-container input[type=text]:focus {
+    border: 1px solid white;
+}
+
+.inner-container button {
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    background-color: #0F0F0F;
+}
+
+.inner-container button:focus {
+    box-shadow: inset 0 1px 1px #0F0F0F, 0 0 8px #0F0F0F;
+}
+
+.form-control:focus {
+    border-color: #0F0F0F;
+    box-shadow: inset 0 1px 1px #0F0F0F, 0 0 8px #0F0F0F;
+}
