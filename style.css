@@ -51,11 +51,13 @@ body {
 
 .result-container {
     transition: 0.5s;
+    opacity: 0;
 }
 
 span {
     display: inline-block;
     padding-bottom: 2px;
+    transition: 0.2s;
 }
 
 nav a {
@@ -67,3 +69,20 @@ nav p {
     font-family: 'Fira Code', monospace;
     font-size: 0.75rem;
 }
+
+#result-container p {
+    color: #4f4f4f;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.wordcount-selector p {
+    color: #4f4f4f;
+}
+
+.selected-count {
+    color: #C6A45A;
+}
+
