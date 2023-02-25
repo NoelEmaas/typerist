@@ -20,18 +20,37 @@
     </nav>
     <div class="main-container container vh-100 d-flex align-items-center justify-content-center px-5">
         <div class="row position-relative">
-            <div id="inner-container" class="inner-container container rounded-3 p-4">
-                <div id="word-container">
+            <div class="container">
+                <div class="wordcount-selector container d-flex gap-3">
+                    <p id="wordCount-10" class="pointer wordCount" onclick="restart(10)">10</p><p>|</p>
+                    <p id="wordCount-25" class="pointer wordCount" onclick="restart(25)">25</p><p>|</p>
+                    <p id="wordCount-50" class="pointer wordCount" onclick="restart(50)">50</p><p>|</p>
+                    <p id="wordCount-100" class="pointer wordCount" onclick="restart(100)">100</p>
                 </div>
-                <div class="input-group pt-3">
-                    <input type="text" id="input-field" class="form-control rounded-2" autofocus>
-                    <div class="input-group-append">
-                      <button class="btn btn-secondary" type="button" onclick="restart()"><i class="bi bi-arrow-counterclockwise""></i></button>
+                <div id="inner-container" class="inner-container container rounded-3 p-4">
+                    <div id="word-container">
                     </div>
-                </div> 
+                    <div class="input-group pt-3">
+                        <input type="text" id="input-field" class="form-control rounded-2" autofocus>
+                        <div class="input-group-append">
+                          <button id="restart-button" class="btn btn-secondary" type="button" onclick="restart()"><i class="bi bi-arrow-counterclockwise""></i></button>
+                        </div>
+                    </div> 
+                </div>
             </div>
             <div id="result-container" class="result-container position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end justify-content-center pb-2" style="z-index: -1;">
-                <h1 class="fs-3 text-white">WPM: halat mayo pa</h1>
+                <div class="row text-center">
+                    <h1 id="cpm" class="fs-3 text-white"></h1>
+                    <p>chars/sec</p>
+                </div>
+                <div class="row text-center">
+                    <h1 id="wpm" class="fs-3 text-white"></h1>
+                    <p>words/min</p>
+                </div> 
+                <div class="row text-center">
+                    <h1 id="accuracy" class="fs-3 text-white"></h1>
+                    <p>accuracy</p>
+                </div>
             </div>
         </div>
     </div>
