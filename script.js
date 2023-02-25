@@ -12,7 +12,7 @@ function getRandomWords() {
         const words = content.split('\n');
         const randomWords = [];
         
-        for(let i = 0; i < 10; ++i) {
+        for(let i = 0; i < 20; ++i) {
             const randomIndex = Math.floor(Math.random() * words.length);
             randomWords.push(words[randomIndex]);
         }
@@ -57,7 +57,7 @@ function textInput() {
 
             charactersTyped++;
 
-            if(enteredWords < 10){
+            if(enteredWords < 20){
                 if(input.slice(-1) === " ") {
                     inputField.style.backgroundColor = "";
                     if(input.length > 1) {
@@ -73,7 +73,7 @@ function textInput() {
                         inputField.value = "";
                         activeWordIndex++;
                         activeWord = words[activeWordIndex];
-                        if(activeWordIndex < 10)
+                        if(activeWordIndex < 20)
                             activeWord.style.color =  "#ACA98A";
                         enteredWords++;
                     }
@@ -91,7 +91,7 @@ function textInput() {
 
             console.log(enteredWords);
 
-            if(enteredWords >= 10) {
+            if(enteredWords >= 20) {
                 endTime = Date.now();
                 totalTime = (endTime - startTime) / 1000;
                 console.log("WPM: " + (correctCharactersTyped/5)/(totalTime/60));
