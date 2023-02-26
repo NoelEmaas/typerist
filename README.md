@@ -11,7 +11,7 @@
 ## TODO
 
 - [x] Add results
-  - Forumula for calculating speeds:
+  - Formula for calculating speeds:
   - CPM: $Correct Characters Typed / Seconds$
   - WPM: $(Correct Characters Typed / 5) / Minutes$
   - Accuracy: $(Correct Characters Typed / Total Characters Typed) * 100$
