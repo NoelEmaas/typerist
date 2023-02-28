@@ -53,8 +53,12 @@ function getRandomWords(numberOfWords) {
         const randomWords = [];
         
         for(let i = 0; i < numberOfWords; ++i) {
-            const randomIndex = Math.floor(Math.random() * wordList.length);
-            randomWords.push(wordList[randomIndex]);
+            var word = "";
+            while(word === ""){
+                const randomIndex = Math.floor(Math.random() * wordList.length);
+                word = wordList[randomIndex];
+            }
+            randomWords.push(word);
         }
 
         wordContainer.innerHTML = "";
@@ -118,7 +122,7 @@ function nextWord() {
     inputField.value = "";
     activeWordIndex++;
     activeWord = words[activeWordIndex];
-    if(activeWordIndex < 10) activeWord.style.color =  "#ACA98A";
+    if(activeWordIndex < WordCount) activeWord.style.color =  "#ACA98A";
     enteredWords++;
 }
 
